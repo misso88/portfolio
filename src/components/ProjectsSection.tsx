@@ -8,7 +8,7 @@ export default function ProjectsSection() {
           Projects
         </h2>
         <h3 className="text-3xl font-bold mb-12">프로젝트</h3>
-        <div className="grid sm:grid-cols-2 gap-6">
+        <div className="grid gap-6">
           {projects.map((project, i) => (
             <article
               key={i}
@@ -17,7 +17,10 @@ export default function ProjectsSection() {
               {/* Color accent bar */}
               <div className="w-10 h-1 bg-primary rounded-full mb-4" />
 
-              <h4 className="text-lg font-semibold mb-2">{project.title}</h4>
+              <h4 className="text-lg font-semibold mb-1">{project.title}</h4>
+              <p className="text-xs text-muted font-mono mb-3">
+                {project.period} · {project.team}인 팀 프로젝트
+              </p>
               <p className="text-sm text-muted leading-relaxed mb-4 flex-1">
                 {project.description}
               </p>
