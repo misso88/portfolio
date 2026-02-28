@@ -1,55 +1,96 @@
 export const profile = {
   name: "김소윤",
-  nameEn: "Soyoon Kim",
+  nameEn: "Kim SoYun",
   title: "Fullstack Developer",
-  bio: "컴퓨터공학을 전공한 4년차 풀스택 개발자입니다. 사용자 경험을 고려한 프론트엔드와 안정적인 백엔드 설계를 함께 추구합니다.",
+  bio: "컴퓨터정보공학을 전공한 5년차 풀스택 개발자입니다. 사용자 경험을 고려한 프론트엔드와 안정적인 백엔드 설계를 함께 추구합니다.",
   about:
-    "대학에서 컴퓨터공학을 전공하며 소프트웨어 개발의 기초를 다졌습니다. 졸업 후 프론트엔드와 백엔드를 아우르는 풀스택 개발자로 성장해왔으며, 복잡한 비즈니스 로직을 깔끔한 코드로 풀어내는 것을 좋아합니다. 새로운 기술을 배우고 적용하는 데 적극적이며, 팀원들과의 협업을 통해 더 나은 결과물을 만들어내는 것을 중요하게 생각합니다.",
+    "군산대학교에서 컴퓨터정보공학을 전공하며 소프트웨어 개발의 기초를 다졌습니다. 졸업 후 플랫폼 개발과 소프트웨어 개발을 아우르는 풀스택 개발자로 성장해왔으며, 삼성 청년 SW 아카데미(SSAFY)를 수료하며 실무 역량을 강화했습니다. 새로운 기술을 배우고 적용하는 데 적극적이며, 팀원들과의 협업을 통해 더 나은 결과물을 만들어내는 것을 중요하게 생각합니다.",
 };
 
 export const skills = [
   {
     category: "Frontend",
-    items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML/CSS"],
+    items: ["React", "Next.js", "Vue.js", "TypeScript", "HTML/CSS"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "Spring Boot", "Java", "REST API"],
+    items: ["Java", "Spring Boot", "Node.js", "Express"],
   },
   {
     category: "Database",
-    items: ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
+    items: ["MySQL", "MSSQL", "Redis"],
   },
   {
     category: "DevOps & Tools",
-    items: ["Git", "Docker", "AWS", "Vercel", "Figma"],
+    items: [
+      "Git",
+      "Jira",
+      "Confluence",
+      "AWS (EC2, S3, CloudFront)",
+      "Vercel",
+    ],
   },
 ];
 
 export const experiences = [
   {
-    company: "테크스타트업",
-    role: "Fullstack Developer",
-    period: "2024.01 - 현재",
+    company: "에임시스템",
+    role: "소프트웨어 개발",
+    position: "선임",
+    period: "2023.09 - 현재",
     description:
-      "SaaS 플랫폼의 프론트엔드·백엔드 개발을 담당하고 있습니다. React와 Spring Boot 기반의 서비스를 개발하며, 성능 최적화와 사용자 경험 개선에 집중하고 있습니다.",
+      "소프트웨어 개발 업무를 담당하고 있습니다.",
+    highlights: [],
+  },
+  {
+    company: "삼성 청년 SW 아카데미 (SSAFY)",
+    role: "교육생",
+    position: "",
+    period: "2022.07 - 2023.06",
+    description:
+      "삼성전자 주관 소프트웨어 집중 교육 과정(총 1,600시간)을 수료했습니다.",
     highlights: [
-      "대시보드 페이지 로딩 속도 40% 개선",
-      "결제 시스템 연동 및 구독 관리 기능 구현",
-      "CI/CD 파이프라인 구축으로 배포 자동화",
+      "공통 프로젝트 우수상 수상 (삼성전자주식회사)",
     ],
   },
   {
-    company: "웹에이전시",
-    role: "Frontend Developer",
-    period: "2022.03 - 2023.12",
+    company: "(주)올리고컴퍼니",
+    role: "플랫폼 개발",
+    position: "사원",
+    period: "2020.12 - 2022.05",
     description:
-      "다양한 클라이언트 프로젝트의 프론트엔드 개발을 담당했습니다. React와 Next.js를 활용한 웹 애플리케이션 개발 경험을 쌓았습니다.",
-    highlights: [
-      "10개 이상의 클라이언트 프로젝트 성공적 런칭",
-      "공통 컴포넌트 라이브러리 구축으로 개발 생산성 30% 향상",
-      "웹 접근성(WCAG 2.1) 가이드라인 준수",
-    ],
+      "플랫폼 개발 업무를 담당했습니다.",
+    highlights: [],
+  },
+];
+
+export const education = [
+  {
+    school: "군산대학교",
+    major: "컴퓨터정보공학",
+    period: "2017.03 - 2021.02",
+    gpa: "4.03 / 4.5",
+  },
+];
+
+export const certifications = [
+  {
+    name: "SQLD",
+    date: "2022.12",
+    issuer: "한국데이터베이스진흥원",
+  },
+  {
+    name: "정보처리기사",
+    date: "2020.08",
+    issuer: "한국산업인력공단",
+  },
+];
+
+export const awards = [
+  {
+    title: "공통 프로젝트 우수상",
+    date: "2023.02",
+    issuer: "삼성전자주식회사",
   },
 ];
 
@@ -93,8 +134,7 @@ export const projects = [
 ];
 
 export const contacts = {
-  email: "soyoon.dev@example.com",
+  email: "soyun9812@gmail.com",
   github: "https://github.com/soyoonkim",
-  linkedin: "https://linkedin.com/in/soyoonkim",
-  blog: "https://blog.example.com",
+  phone: "010-3107-5571",
 };
