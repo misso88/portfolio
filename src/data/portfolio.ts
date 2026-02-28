@@ -95,6 +95,47 @@ export const awards = [
 ];
 
 export const projects = [
+  // --- 에임시스템 (최신순) ---
+  {
+    title: "KASIS Monitoring",
+    description:
+      "KAC 공항 체크인 카운터 플랫폼(KASIS)의 카운터 및 장비 오류를 실시간으로 모니터링하는 서비스. 프론트엔드·백엔드 전체를 단독 개발했습니다.",
+    techStack: ["Vue.js", "Spring Boot", "MSSQL"],
+    period: null,
+    team: null,
+    role: "풀스택 (단독 개발)",
+    company: "에임시스템",
+    github: null,
+    demo: null,
+    image: null,
+  },
+  {
+    title: "LDCS",
+    description:
+      "DCS(출발편 관리 시스템) 장애 시 대체 운영을 위한 로컬 DCS. 프론트엔드 개발을 담당했습니다.",
+    techStack: ["React", "TypeScript", "MSSQL"],
+    period: null,
+    team: null,
+    role: "프론트엔드",
+    company: "에임시스템",
+    github: null,
+    demo: null,
+    image: null,
+  },
+  {
+    title: "셀프체크인 키오스크",
+    description:
+      "공항 키오스크 기반 셀프체크인 시스템의 유지보수를 담당하고 있습니다.",
+    techStack: ["Spring Boot", "Java Swing", "MSSQL"],
+    period: null,
+    team: null,
+    role: "유지보수",
+    company: "에임시스템",
+    github: null,
+    demo: null,
+    image: null,
+  },
+  // --- SSAFY 프로젝트 (최신순) ---
   {
     title: "Oreuda",
     description:
@@ -111,28 +152,10 @@ export const projects = [
     ],
     period: "2023.04 - 2023.05",
     team: 6,
+    role: null,
+    company: null,
     github: "https://github.com/misso88/oreuda",
     demo: "https://oreuda.kr",
-    image: null,
-  },
-  {
-    title: "싸리질러",
-    description:
-      "WebRTC(OpenVidu)를 활용한 온라인 화상 노래방 서비스. 일반 모드, 가사 맞추기, 퍼펙트 스코어(푸리에 변환 음정 분석) 등 3가지 모드를 제공하며, SSE 기반 실시간 알림과 소셜 로그인을 지원합니다. SSAFY 공통 프로젝트 우수상 수상.",
-    techStack: [
-      "Next.js",
-      "TypeScript",
-      "Spring Boot",
-      "MySQL",
-      "Redis",
-      "Docker",
-      "Jenkins",
-      "Kubernetes",
-    ],
-    period: "2023.01 - 2023.02",
-    team: 6,
-    github: "https://github.com/misso88/ssarijileo",
-    demo: null,
     image: null,
   },
   {
@@ -152,7 +175,31 @@ export const projects = [
     ],
     period: "2023.02 - 2023.04",
     team: 6,
+    role: null,
+    company: null,
     github: "https://github.com/misso88/harupalette",
+    demo: null,
+    image: null,
+  },
+  {
+    title: "싸리질러",
+    description:
+      "WebRTC(OpenVidu)를 활용한 온라인 화상 노래방 서비스. 일반 모드, 가사 맞추기, 퍼펙트 스코어(푸리에 변환 음정 분석) 등 3가지 모드를 제공하며, SSE 기반 실시간 알림과 소셜 로그인을 지원합니다. SSAFY 공통 프로젝트 우수상 수상.",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Spring Boot",
+      "MySQL",
+      "Redis",
+      "Docker",
+      "Jenkins",
+      "Kubernetes",
+    ],
+    period: "2023.01 - 2023.02",
+    team: 6,
+    role: null,
+    company: null,
+    github: "https://github.com/misso88/ssarijileo",
     demo: null,
     image: null,
   },
