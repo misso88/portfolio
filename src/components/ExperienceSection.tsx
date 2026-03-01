@@ -1,4 +1,4 @@
-import { experiences } from "@/data/portfolio";
+import { experiences, education, certifications, awards } from "@/data/portfolio";
 
 export default function ExperienceSection() {
   return (
@@ -19,7 +19,10 @@ export default function ExperienceSection() {
               <div>
                 <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-1">
                   <h4 className="text-lg font-semibold">{exp.company}</h4>
-                  <span className="text-sm text-muted">{exp.role}</span>
+                  <span className="text-sm text-muted">
+                    {exp.role}
+                    {exp.position && ` · ${exp.position}`}
+                  </span>
                 </div>
                 <p className="text-xs text-muted mb-3 font-mono">
                   {exp.period}
@@ -27,20 +30,69 @@ export default function ExperienceSection() {
                 <p className="text-sm text-muted leading-relaxed mb-3">
                   {exp.description}
                 </p>
-                <ul className="space-y-1.5">
-                  {exp.highlights.map((item, j) => (
-                    <li
-                      key={j}
-                      className="text-sm text-foreground flex items-start gap-2"
-                    >
-                      <span className="text-primary mt-1 shrink-0">▸</span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+                {exp.highlights.length > 0 && (
+                  <ul className="space-y-1.5">
+                    {exp.highlights.map((item, j) => (
+                      <li
+                        key={j}
+                        className="text-sm text-foreground flex items-start gap-2"
+                      >
+                        <span className="text-primary mt-1 shrink-0">▸</span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Education */}
+        <h3 className="text-3xl font-bold mt-20 mb-12">학력</h3>
+        <div className="space-y-4">
+          {education.map((edu, i) => (
+            <div key={i} className="bg-card rounded-xl p-5">
+              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-1">
+                <h4 className="text-lg font-semibold">{edu.school}</h4>
+                <span className="text-sm text-muted">{edu.major}</span>
+              </div>
+              <div className="flex flex-wrap items-center gap-x-4 text-xs text-muted font-mono">
+                <span>{edu.period}</span>
+                <span>GPA {edu.gpa}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Certifications & Awards */}
+        <div className="grid sm:grid-cols-2 gap-8 mt-20">
+          <div>
+            <h3 className="text-xl font-bold mb-6">자격증</h3>
+            <div className="space-y-3">
+              {certifications.map((cert, i) => (
+                <div key={i} className="bg-card rounded-xl p-4">
+                  <p className="font-semibold text-sm">{cert.name}</p>
+                  <p className="text-xs text-muted mt-1">
+                    {cert.date} · {cert.issuer}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold mb-6">수상</h3>
+            <div className="space-y-3">
+              {awards.map((award, i) => (
+                <div key={i} className="bg-card rounded-xl p-4">
+                  <p className="font-semibold text-sm">{award.title}</p>
+                  <p className="text-xs text-muted mt-1">
+                    {award.date} · {award.issuer}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

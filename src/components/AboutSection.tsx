@@ -18,7 +18,7 @@ export default function AboutSection() {
             <p className="text-sm text-muted">{profile.title}</p>
             <div className="mt-4 flex items-center justify-center gap-1 text-sm text-muted">
               <span className="inline-block w-2 h-2 bg-green-400 rounded-full" />
-              4년차 개발자
+              5년차 개발자
             </div>
           </div>
 
@@ -29,7 +29,7 @@ export default function AboutSection() {
             </p>
             <div className="mt-8 grid grid-cols-2 gap-4">
               <div className="bg-card rounded-xl p-4">
-                <p className="text-2xl font-bold text-foreground">4+</p>
+                <p className="text-2xl font-bold text-foreground">5+</p>
                 <p className="text-sm text-muted">Years Experience</p>
               </div>
               <div className="bg-card rounded-xl p-4">
