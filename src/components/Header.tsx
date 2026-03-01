@@ -13,6 +13,7 @@ const navItems = [
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -20,15 +21,32 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: "-50% 0px -50% 0px" }
+    );
+
+    const sections = document.querySelectorAll("section[id]");
+    sections.forEach((s) => observer.observe(s));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/80 backdrop-blur-md shadow-sm"
+          ? "bg-background/80 backdrop-blur-md shadow-sm border-b border-border/50"
           : "bg-transparent"
       }`}
     >
-      <nav className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a
           href="#"
           className="text-lg font-semibold tracking-tight text-foreground"
@@ -42,7 +60,11 @@ export default function Header() {
             <li key={item.href}>
               <a
                 href={item.href}
-                className="text-sm text-muted hover:text-foreground transition-colors duration-200"
+                className={`text-sm transition-colors duration-200 ${
+                  activeSection === item.href.slice(1)
+                    ? "text-foreground font-medium"
+                    : "text-muted hover:text-foreground"
+                }`}
               >
                 {item.label}
               </a>
@@ -76,13 +98,17 @@ export default function Header() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-border animate-fade-in">
+        <div className="md:hidden bg-background/95 backdrop-blur-md border-t border-border animate-fade-in">
           <ul className="flex flex-col px-6 py-4 gap-4">
             {navItems.map((item) => (
               <li key={item.href}>
                 <a
                   href={item.href}
-                  className="text-sm text-muted hover:text-foreground transition-colors"
+                  className={`text-sm transition-colors ${
+                    activeSection === item.href.slice(1)
+                      ? "text-foreground font-medium"
+                      : "text-muted hover:text-foreground"
+                  }`}
                   onClick={() => setMobileOpen(false)}
                 >
                   {item.label}
