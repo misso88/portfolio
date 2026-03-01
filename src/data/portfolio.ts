@@ -4,7 +4,7 @@ export const profile = {
   title: "Fullstack Developer",
   bio: "컴퓨터정보공학을 전공한 5년차 풀스택 개발자입니다. 사용자 경험을 고려한 프론트엔드와 안정적인 백엔드 설계를 함께 추구합니다.",
   about:
-    "군산대학교에서 컴퓨터정보공학을 전공하며 소프트웨어 개발의 기초를 다졌습니다. 졸업 후 플랫폼 개발과 소프트웨어 개발을 아우르는 풀스택 개발자로 성장해왔으며, 삼성 청년 SW 아카데미(SSAFY)를 수료하며 실무 역량을 강화했습니다. 새로운 기술을 배우고 적용하는 데 적극적이며, 팀원들과의 협업을 통해 더 나은 결과물을 만들어내는 것을 중요하게 생각합니다.",
+    "컴퓨터정보공학을 전공하며 소프트웨어 개발의 기초를 다졌습니다. 졸업 후 플랫폼 개발과 소프트웨어 개발을 아우르는 풀스택 개발자로 성장해왔으며, 삼성 청년 SW 아카데미(SSAFY)를 수료하며 실무 역량을 강화했습니다. 새로운 기술을 배우고 적용하는 데 적극적이며, 팀원들과의 협업을 통해 더 나은 결과물을 만들어내는 것을 중요하게 생각합니다.",
 };
 
 export const skills = [
@@ -139,20 +139,21 @@ export const projects = [
   {
     title: "Oreuda",
     description:
-      "GitHub 활동을 기반으로 성장 식물을 키우며, 리포지토리를 폴더별로 관리하고 프로필 README를 GUI로 생성할 수 있는 개발자 성장 플랫폼. Chrome 확장프로그램도 지원합니다.",
+      "GitHub 활동을 기반으로 성장 식물을 키우며, 리포지토리를 폴더별로 관리하고 프로필 README를 GUI로 생성할 수 있는 개발자 성장 플랫폼. Chrome 확장프로그램도 지원합니다. GraphQL을 활용한 GitHub 연동 및 데이터 전처리, 레포지토리 도메인 백엔드를 담당했습니다.",
     techStack: [
-      "Next.js",
-      "TypeScript",
       "Spring Boot",
       "Spring Cloud",
+      "GraphQL",
       "MySQL",
       "Redis",
+      "Next.js",
+      "TypeScript",
       "Jenkins",
       "Docker",
     ],
     period: "2023.04 - 2023.05",
     team: 6,
-    role: null,
+    role: "백엔드",
     company: null,
     github: "https://github.com/misso88/oreuda",
     demo: "https://oreuda.kr",
@@ -161,21 +162,21 @@ export const projects = [
   {
     title: "HaruPalette",
     description:
-      "AI 기반 음성 다이어리 서비스. OpenAI Whisper로 음성을 텍스트로 변환하고, RoBERTa 모델로 다중 감정을 분석하여 캐릭터가 응답합니다. Three.js를 활용한 인터랙티브 UI와 위치 기반 날씨 연동을 제공합니다.",
+      "AI 기반 음성 다이어리 서비스. OpenAI Whisper로 음성을 텍스트로 변환하고, RoBERTa 모델로 다중 감정을 분석하여 캐릭터가 응답합니다. Three.js를 활용한 인터랙티브 UI와 위치 기반 날씨 연동을 제공합니다. Jenkins 기반 CI/CD 파이프라인 구축을 담당했습니다.",
     techStack: [
-      "Next.js",
-      "TypeScript",
-      "Three.js",
       "Spring Boot",
-      "Python",
       "MySQL",
       "Redis",
       "Jenkins",
       "Docker",
+      "Next.js",
+      "TypeScript",
+      "Three.js",
+      "Python",
     ],
     period: "2023.02 - 2023.04",
     team: 6,
-    role: null,
+    role: "CI/CD",
     company: null,
     github: "https://github.com/misso88/harupalette",
     demo: null,
@@ -184,20 +185,20 @@ export const projects = [
   {
     title: "싸리질러",
     description:
-      "WebRTC(OpenVidu)를 활용한 온라인 화상 노래방 서비스. 일반 모드, 가사 맞추기, 퍼펙트 스코어(푸리에 변환 음정 분석) 등 3가지 모드를 제공하며, SSE 기반 실시간 알림과 소셜 로그인을 지원합니다. SSAFY 공통 프로젝트 우수상 수상.",
+      "WebRTC(OpenVidu)를 활용한 온라인 화상 노래방 서비스. 일반 모드, 가사 맞추기, 퍼펙트 스코어(푸리에 변환 음정 분석) 등 3가지 모드를 제공하며, SSE 기반 실시간 알림과 소셜 로그인을 지원합니다. 전체 비즈니스 로직 설계 및 Redis를 활용한 세션·캐싱 처리를 담당했습니다. SSAFY 공통 프로젝트 우수상 수상.",
     techStack: [
-      "Next.js",
-      "TypeScript",
       "Spring Boot",
-      "MySQL",
       "Redis",
+      "MySQL",
       "Docker",
       "Jenkins",
       "Kubernetes",
+      "Next.js",
+      "TypeScript",
     ],
     period: "2023.01 - 2023.02",
     team: 6,
-    role: null,
+    role: "백엔드",
     company: null,
     github: "https://github.com/misso88/ssarijileo",
     demo: null,
