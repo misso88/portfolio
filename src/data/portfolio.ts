@@ -27,7 +27,6 @@ export const skills = [
       "Jira",
       "Confluence",
       "AWS (EC2, S3, CloudFront)",
-      "Vercel",
     ],
   },
 ];
@@ -97,9 +96,9 @@ export const awards = [
 export const projects = [
   // --- 에임시스템 (최신순) ---
   {
-    title: "LDCS",
+    title: "LDCS (Local Departure Control System)",
     description:
-      "DCS(출발편 관리 시스템) 장애 시 대체 운영을 위한 로컬 DCS. 설계 및 프론트엔드 개발을 담당했습니다.",
+      "DCS(출발 관리 시스템) 장애 시 대체 운영을 위한 로컬 DCS. 설계 및 프론트엔드 개발을 담당했습니다.",
     techStack: ["React", "TypeScript", "MSSQL"],
     period: null,
     team: null,
@@ -117,6 +116,19 @@ export const projects = [
     period: null,
     team: null,
     role: "풀스택 (단독 개발)",
+    company: "에임시스템",
+    github: null,
+    demo: null,
+    image: null,
+  },
+  {
+    title: "셀프백드랍",
+    description:
+      "승객이 직접 수하물 위탁을 처리하는 시스템. 프론트엔드 개발을 담당했습니다.",
+    techStack: ["React"],
+    period: null,
+    team: 2,
+    role: "프론트엔드",
     company: "에임시스템",
     github: null,
     demo: null,
@@ -201,6 +213,23 @@ export const projects = [
     role: "백엔드",
     company: null,
     github: "https://github.com/misso88/ssarijileo",
+    demo: null,
+    image: null,
+  },
+  // --- 올리고컴퍼니 (최신순) ---
+  {
+    title: "Doctor J.J",
+    description:
+      "의료 상담 예약 서비스. 크로스 플랫폼을 활용하여 모바일 개발을 담당했습니다.",
+    techStack: [
+      "Dart",
+      "Flutter",
+    ],
+    period: null,
+    team: 2,
+    role: "모바일",
+    company: "올리고컴퍼니",
+    github: null,
     demo: null,
     image: null,
   },
