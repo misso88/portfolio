@@ -3,7 +3,8 @@
 import { projects } from "@/data/portfolio";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
-const companyProjects = projects.filter((p) => p.company !== null);
+const aimProjects = projects.filter((p) => p.company === "에임시스템(주)");
+const oligoProjects = projects.filter((p) => p.company === "(주)올리고컴퍼니");
 const ssafyProjects = projects.filter((p) => p.company === null);
 
 function ProjectCard({
@@ -115,27 +116,42 @@ export default function ProjectsSection() {
         <div className="mb-16">
           <div className="reveal flex items-center gap-3 mb-6">
             <span className="px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-lg border border-primary/20">
-              에임시스템
+              에임시스템(주)
             </span>
             <div className="flex-1 h-px bg-border" />
           </div>
           <div className="grid md:grid-cols-2 gap-5">
-            {companyProjects.map((project, i) => (
+            {aimProjects.map((project, i) => (
               <ProjectCard key={project.title} project={project} index={i} />
             ))}
           </div>
         </div>
 
         {/* SSAFY Projects */}
-        <div>
+        <div className="mb-16">
           <div className="reveal flex items-center gap-3 mb-6">
             <span className="px-3 py-1 bg-amber-500/10 text-amber-700 text-sm font-medium rounded-lg border border-amber-200">
-              SSAFY
+              삼성 청년 SW 아카데미 (SSAFY)
             </span>
             <div className="flex-1 h-px bg-border" />
           </div>
           <div className="grid md:grid-cols-2 gap-5">
             {ssafyProjects.map((project, i) => (
+              <ProjectCard key={project.title} project={project} index={i} />
+            ))}
+          </div>
+        </div>
+
+        {/* Company Projects */}
+        <div>
+          <div className="reveal flex items-center gap-3 mb-6">
+            <span className="px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-lg border border-primary/20">
+              (주)올리고컴퍼니
+            </span>
+            <div className="flex-1 h-px bg-border" />
+          </div>
+          <div className="grid md:grid-cols-2 gap-5">
+            {oligoProjects.map((project, i) => (
               <ProjectCard key={project.title} project={project} index={i} />
             ))}
           </div>

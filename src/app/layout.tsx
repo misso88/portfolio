@@ -16,11 +16,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "김소윤 | Fullstack Developer",
   description:
-    "컴퓨터공학 전공, 4년차 풀스택 개발자 김소윤의 포트폴리오입니다.",
+    "컴퓨터공학 전공, 풀스택 개발자 김소윤의 포트폴리오입니다.",
   openGraph: {
     title: "김소윤 | Fullstack Developer",
     description:
-      "컴퓨터공학 전공, 4년차 풀스택 개발자 김소윤의 포트폴리오입니다.",
+      "컴퓨터공학 전공, 풀스택 개발자 김소윤의 포트폴리오입니다.",
     type: "website",
   },
 };
