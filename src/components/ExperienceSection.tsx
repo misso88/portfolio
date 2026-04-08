@@ -35,7 +35,7 @@ export default function ExperienceSection() {
                 <span
                   className={`px-2.5 py-0.5 text-xs font-medium rounded-full ${
                     exp.role === "교육생"
-                      ? "bg-amber-50 text-amber-700 border border-amber-200"
+                      ? "bg-amber-500/10 text-amber-700 border border-amber-200"
                       : "bg-primary/10 text-primary border border-primary/20"
                   }`}
                 >

@@ -1,8 +1,10 @@
+export const yearsOfExperience = new Date().getFullYear() - 2021;
+
 export const profile = {
   name: "김소윤",
   nameEn: "Kim SoYun",
   title: "Fullstack Developer",
-  bio: "컴퓨터정보공학을 전공한 4년차 풀스택 개발자입니다. 사용자 경험을 고려한 프론트엔드와 안정적인 백엔드 설계를 함께 추구합니다.",
+  bio: `컴퓨터정보공학을 전공한 ${yearsOfExperience - 1}년차 풀스택 개발자입니다. 사용자 경험을 고려한 프론트엔드와 안정적인 백엔드 설계를 함께 추구합니다.`,
   about:
     "컴퓨터정보공학을 전공하며 소프트웨어 개발의 기초를 다졌습니다. 졸업 후 플랫폼 개발과 소프트웨어 개발을 아우르는 풀스택 개발자로 성장해왔으며, 삼성청년SW아카데미(SSAFY)를 수료하며 실무 역량을 강화했습니다. 새로운 기술을 배우고 적용하는 데 적극적이며, 팀원들과의 협업을 통해 더 나은 결과물을 만들어내는 것을 중요하게 생각합니다.",
 };
@@ -40,6 +42,7 @@ export const experiences = [
     description:
       "웹 개발 업무를 담당하고 있습니다.",
     highlights: [],
+    isEducation: false,
   },
   {
     company: "삼성 청년 SW 아카데미 (SSAFY)",
@@ -51,6 +54,7 @@ export const experiences = [
     highlights: [
       "공통 프로젝트 우수상 수상 (삼성전자주식회사)",
     ],
+    isEducation: true,
   },
   {
     company: "(주)올리고컴퍼니",
@@ -60,6 +64,7 @@ export const experiences = [
     description:
       "모바일 개발 업무를 담당했습니다.",
     highlights: [],
+    isEducation: false,
   },
 ];
 
@@ -103,7 +108,7 @@ export const projects = [
     period: null,
     team: null,
     role: "프론트엔드",
-    company: "에임시스템",
+    company: "에임시스템(주)",
     github: null,
     demo: null,
     image: null,
@@ -116,7 +121,7 @@ export const projects = [
     period: null,
     team: null,
     role: "풀스택 (단독 개발)",
-    company: "에임시스템",
+    company: "에임시스템(주)",
     github: null,
     demo: null,
     image: null,
@@ -127,9 +132,9 @@ export const projects = [
       "승객이 직접 수하물 위탁을 처리하는 시스템. 프론트엔드 개발을 담당했습니다.",
     techStack: ["React"],
     period: null,
-    team: 2,
+    team: null,
     role: "프론트엔드",
-    company: "에임시스템",
+    company: "에임시스템(주)",
     github: null,
     demo: null,
     image: null,
@@ -142,7 +147,7 @@ export const projects = [
     period: null,
     team: null,
     role: "유지보수",
-    company: "에임시스템",
+    company: "에임시스템(주)",
     github: null,
     demo: null,
     image: null,
@@ -154,14 +159,8 @@ export const projects = [
       "GitHub 활동을 기반으로 성장 식물을 키우며, 레포지토리를 폴더별로 관리하고 프로필 README를 GUI로 생성할 수 있는 개발자 성장 플랫폼. GraphQL을 활용한 GitHub 연동 및 데이터 전처리, 레포지토리 도메인 백엔드를 담당했습니다.",
     techStack: [
       "Spring Boot",
-      "Spring Cloud",
       "GraphQL",
       "MySQL",
-      "Redis",
-      "Next.js",
-      "TypeScript",
-      "Jenkins",
-      "Docker",
     ],
     period: "2023.04 - 2023.05",
     team: 6,
@@ -176,15 +175,9 @@ export const projects = [
     description:
       "AI 기반 음성 다이어리 서비스. OpenAI Whisper로 음성을 텍스트로 변환하고, RoBERTa 모델로 다중 감정을 분석하여 캐릭터가 응답합니다. Three.js를 활용한 인터랙티브 UI와 위치 기반 날씨 연동을 제공합니다. Jenkins 기반 CI/CD 파이프라인 구축을 담당했습니다.",
     techStack: [
-      "Spring Boot",
-      "MySQL",
-      "Redis",
-      "Jenkins",
       "Docker",
-      "Next.js",
-      "TypeScript",
-      "Three.js",
-      "Python",
+      "Jenkins",
+      "MySQL",
     ],
     period: "2023.02 - 2023.04",
     team: 6,
@@ -202,11 +195,6 @@ export const projects = [
       "Spring Boot",
       "Redis",
       "MySQL",
-      "Docker",
-      "Jenkins",
-      "Kubernetes",
-      "Next.js",
-      "TypeScript",
     ],
     period: "2023.01 - 2023.02",
     team: 6,
@@ -226,9 +214,9 @@ export const projects = [
       "Flutter",
     ],
     period: null,
-    team: 2,
+    team: null,
     role: "모바일",
-    company: "올리고컴퍼니",
+    company: "(주)올리고컴퍼니",
     github: null,
     demo: null,
     image: null,

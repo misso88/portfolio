@@ -1,6 +1,6 @@
 "use client";
 
-import { profile } from "@/data/portfolio";
+import { yearsOfExperience, profile, projects } from "@/data/portfolio";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 export default function AboutSection() {
@@ -24,11 +24,11 @@ export default function AboutSection() {
             </p>
             <div className="grid grid-cols-2 gap-4">
               <div className="p-5 rounded-xl border border-border bg-card hover:shadow-md transition-shadow">
-                <p className="text-3xl font-bold text-primary mb-1">5+</p>
+                <p className="text-3xl font-bold text-primary mb-1">{yearsOfExperience}+</p>
                 <p className="text-sm text-muted">Years Experience</p>
               </div>
               <div className="p-5 rounded-xl border border-border bg-card hover:shadow-md transition-shadow">
-                <p className="text-3xl font-bold text-primary mb-1">7+</p>
+                <p className="text-3xl font-bold text-primary mb-1">{projects.length}+</p>
                 <p className="text-sm text-muted">Projects</p>
               </div>
             </div>
