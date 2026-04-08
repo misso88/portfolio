@@ -220,7 +220,7 @@ export const projects = [
   {
     title: "Doctor J.J",
     description:
-      "의료 상담 예약 서비스. 크로스 플랫폼을 활용하여 모바일 개발을 담당했습니다.",
+      "의료 상담 예약 서비스(현 K-Cure). 크로스 플랫폼을 활용하여 모바일 개발을 담당했습니다.",
     techStack: [
       "Dart",
       "Flutter",
